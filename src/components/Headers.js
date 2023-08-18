@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Nav = styled.nav`
   display: flex;
@@ -10,7 +13,7 @@ const Nav = styled.nav`
   top: 0;
   font-size: 15px;
   padding: 20px 55px;
-  background-color: #eeeeee;
+  background-color: var(--main-color);
 `;
 
 const Col = styled.div`
@@ -30,24 +33,57 @@ const Item = styled.li`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
 `;
 
+const Circle = styled(motion.span)`
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: blue;
+`;
+
+const Logo = styled.button``;
+
 function Headers() {
+  const pageSelect = useLocation();
+  console.log(pageSelect);
+
   return (
     <Nav>
       <Col>
         <Items>
           <Item>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              Home {pageSelect.pathname === "/" && <Circle layoutId="circle" />}
+            </Link>
           </Item>
           <Item>
-            <Link to="/resume">Resume</Link>
+            <Link to="/resume">
+              Resume
+              {pageSelect.pathname === "/resume" && (
+                <Circle layoutId="circle" />
+              )}
+            </Link>
           </Item>
         </Items>
       </Col>
-      <Col>프린트</Col>
+      <Col>
+        <Items>
+          <Item>프린트</Item>
+          <Item>
+            <Link to="https://github.com/FE012/resume">
+              <FontAwesomeIcon icon={faGithub} size="xl" />
+            </Link>
+          </Item>
+        </Items>
+      </Col>
     </Nav>
   );
 }
