@@ -49,8 +49,6 @@ const Circle = styled(motion.span)`
   background-color: blue;
 `;
 
-const Logo = styled.button``;
-
 function Headers() {
   const pageSelect = useLocation();
   console.log(pageSelect);
