@@ -9,9 +9,11 @@ const GlobalStyle = createGlobalStyle`
 :root {
    /*Color*/
     --main-color: #eeeeee;
+    --point-color: #4477ce;
     /* FontSize */
     --main-font : 1.2rem;
     --title-font : 2.0rem;
+    --subtitle-font: 1.5rem;
     --big-font: 2.2rem;
     /* FontWeight*/
     --regular-weight: 400;
