@@ -8,6 +8,7 @@ const LogoImg = styled.img`
 `;
 
 const SkillBox = styled.section`
+  margin-bottom: 25px;
   h2 {
     padding-bottom: 10px;
     margin-bottom: 25px;
@@ -24,6 +25,7 @@ const SkillBox = styled.section`
     h3 {
       margin-bottom: 10px;
       font-weight: var(--bold-weight);
+      color: var(--point-color);
     }
   }
 `;
