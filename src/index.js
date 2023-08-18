@@ -5,11 +5,18 @@ import App from "./App";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@font-face {
-    font-family: 'LINESeedKR-Bd';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+:root {
+   /*Color*/
+    --main-color: #eeeeee;
+    /* FontSize */
+    --main-font : 1.2rem;
+    --title-font : 2.0rem;
+    --big-font: 2.2rem;
+    /* FontWeight*/
+    --regular-weight: 400;
+    --medeum-weight: 500;
+    --bold-weight: 700;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,11 +34,10 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'LINESeedKR-Bd';
-  font-size: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size : 100%;
   vertical-align: baseline;
-  color: black;
-  
+  color: black;  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
