@@ -2,6 +2,9 @@ import reactLogo from "../assests/image/reactLogo.png";
 import reactQueryLogo from "../assests/image/reactQueryLogo.png";
 import recoilLogo from "../assests/image/recoilLogo.png";
 import jsLogo from "../assests/image/jsLogo.png";
+import htmlLogo from "../assests/image/htmlLogo.png";
+import cssLogo from "../assests/image/cssLogo.png";
+import reduxLogo from "../assests/image/reduxLogo.png";
 
 export const skillsData = [
   {
@@ -13,33 +16,40 @@ export const skillsData = [
   },
   {
     id: 1,
+    logoImg: reduxLogo,
+    name: "Redux",
+    content: "Redux 입니다",
+  },
+  {
+    id: 2,
     logoImg: reactQueryLogo,
     name: "React Query",
     content: "useQuery를 이용해 로딩 화면을 구현할 수 있습니다.",
   },
   {
-    id: 2,
+    id: 3,
     logoImg: recoilLogo,
     name: "Recoil",
     content:
       "복잡한 redux와 달리 간단한 recoil을 사용하여 전역 상태를 관리 할 수 있습니다.",
   },
   {
-    id: 3,
-    logoImg: jsLogo,
-    name: "JavaScript",
-    content: "useQuery를 이용해 로딩 화면을 구현할 수 있습니다.",
-  },
-  {
     id: 4,
     logoImg: jsLogo,
+    name: "JavaScript",
+    content:
+      " es6 문법을 사용하는 것에 익숙하고 JavaScript의 동작 원리를 이해하고 있습니다.",
+  },
+  {
+    id: 5,
+    logoImg: cssLogo,
     name: "CSS",
     content:
       " css 선택자와 flex 사용에 능숙하며, 웹을 반응형으로 만들수 있습니다.",
   },
   {
-    id: 5,
-    logoImg: jsLogo,
+    id: 6,
+    logoImg: htmlLogo,
     name: "HTML",
     content:
       "  div 태그를 사용하기보다 상황에 맞는 시멘틱 태그를 사용하고, 시멘틱 태그를 사용해야 하는 이유를 알고 있습니다.",
