@@ -6,7 +6,7 @@ import Resume from "./page/Resume";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Headers></Headers>
       <Routes>
         <Route path="/" element={<Home />}></Route>
