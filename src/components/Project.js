@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectBox = styled.article`
   display: flex;
-
+  margin-bottom: 35px;
   section:first-child {
     margin-right: 2rem;
   }
@@ -41,8 +41,7 @@ const ProjectBox = styled.article`
     height: 40px;
   }
   a:nth-child(2) button {
-    border-radius: 100%;
-    width: 40px;
+    border-radius: 15%;
     height: 40px;
   }
   a:nth-child(3) button {
@@ -51,9 +50,14 @@ const ProjectBox = styled.article`
   a:nth-child(4) button {
     border-radius: 15%;
   }
+  button:hover {
+    background-color: var(--dark-color);
+    color: var(--main-color);
+  }
 `;
 
 const ProjectImg = styled.img`
+  width: 250px;
   height: 400px;
 `;
 
@@ -75,22 +79,21 @@ function Project() {
           </section>
           <section>
             <div>
-              <Link to={project.link}>
+              <Link to={project.github}>
                 <button>
                   <FontAwesomeIcon icon={faGithub} size="xl" />
                 </button>
               </Link>
-              <Link to="">
-                <button>노션</button>
+              <Link to={project.vlog}>
+                {project.id === 0 ? <button>노션</button> : ""}
               </Link>
-              <Link to="">
-                <button>👉🏼 보러 가기</button>
+              <Link to={project.link}>
+                <button>📎 배포</button>
               </Link>
-              <Link to="">
-                <button>구현한 페이지 보기</button>
+              <Link to={project.pageView}>
+                {project.id === 0 ? <button>구현한 페이지 보기</button> : ""}
               </Link>
             </div>
-
             <h3>{project.name}</h3>
             <h4> 작업 기간: {project.period}</h4>
             <p>{project.content}</p>
