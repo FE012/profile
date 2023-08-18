@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
    /*Color*/
     --main-color: #eeeeee;
     --point-color: #4477ce;
+    --dark-color: #181617;
     /* FontSize */
     --main-font : 1.2rem;
     --title-font : 2.0rem;
