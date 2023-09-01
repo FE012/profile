@@ -73,7 +73,7 @@ function Project() {
     <>
       <Title>📂 프로젝트</Title>
       {projectData.map((project) => (
-        <ProjectBox>
+        <ProjectBox key={project.id}>
           <section>
             <ProjectImg src={project.img} />
           </section>
