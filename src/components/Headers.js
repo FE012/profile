@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = styled.nav`
   display: flex;
@@ -11,9 +12,10 @@ const Nav = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
-  font-size: 15px;
-  padding: 20px 55px;
-  background-color: var(--main-color);
+  font-size: var(--subtitle-font);
+  padding: 20px 60px;
+  background-color: white;
+  border-bottom: 1px solid var(--main-color);
 `;
 
 const Col = styled.div`
@@ -27,31 +29,33 @@ const Items = styled.ul`
 `;
 
 const Item = styled.li`
-  margin-right: 20px;
+  margin-right: 30px;
   transition: color 0.3s ease-in-out;
   position: relative;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  font-size: 20px;
+  justify-content: center;
   font-weight: 700;
+  &:hover {
+    color: var(--point-color);
+    cursor: pointer;
+  }
 `;
 
-const Circle = styled(motion.span)`
+const HeartIcon = styled(FontAwesomeIcon)`
   position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  bottom: -8px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: blue;
+  color: var(--point-color);
 `;
 
 function Headers() {
   const pageSelect = useLocation();
-  console.log(pageSelect);
+  //console.log(pageSelect);
 
   return (
     <Nav>
@@ -59,14 +63,17 @@ function Headers() {
         <Items>
           <Item>
             <Link to="/">
-              Home {pageSelect.pathname === "/" && <Circle layoutId="circle" />}
+              Home{" "}
+              {pageSelect.pathname === "/" && (
+                <HeartIcon icon={faHeart} layoutId="circle" />
+              )}
             </Link>
           </Item>
           <Item>
             <Link to="/resume">
               Resume
               {pageSelect.pathname === "/resume" && (
-                <Circle layoutId="circle" />
+                <HeartIcon icon={faHeart} layoutId="circle" />
               )}
             </Link>
           </Item>
