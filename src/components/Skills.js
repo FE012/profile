@@ -37,7 +37,7 @@ function Skills() {
     <SkillBox>
       <h2>🛠 기술 스택</h2>
       {skillsData.map((skill) => (
-        <>
+        <section key={skill.id}>
           <ul>
             <li>
               <LogoImg src={skill.logoImg} />
@@ -47,7 +47,7 @@ function Skills() {
               </div>
             </li>
           </ul>
-        </>
+        </section>
       ))}
     </SkillBox>
   );
