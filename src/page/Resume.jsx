@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Information from "../components/Information";
-import Introduce from "../components/Introduce";
-import Profile from "../components/Profile";
-import Project from "../components/Project";
-import Skills from "../components/Skills";
+import Information from "../components/Resume/Information";
+import Introduce from "../components/Resume/Introduce";
+import Profile from "../components/Resume/Profile";
+import Project from "../components/Resume/Project";
+import Skills from "../components/Resume/Skills";
 
 const Wrapper = styled.section`
   display: flex;

@@ -12,10 +12,12 @@ const Nav = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
-  font-size: var(--subtitle-font);
+  font-size: var(--main-font);
   padding: 20px 60px;
-  background-color: white;
+  background-color: ${(props) => props.theme.boxColor};
+  color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
+  z-index: -1;
 `;
 
 const Col = styled.div`
@@ -42,7 +44,7 @@ const Item = styled.li`
   }
 `;
 
-const HeartIcon = styled(FontAwesomeIcon)`
+const HeartIcon = styled(motion(FontAwesomeIcon))`
   position: absolute;
   width: 10px;
   height: 10px;
@@ -55,7 +57,6 @@ const HeartIcon = styled(FontAwesomeIcon)`
 
 function Headers() {
   const pageSelect = useLocation();
-  //console.log(pageSelect);
 
   return (
     <Nav>

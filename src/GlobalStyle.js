@@ -4,13 +4,14 @@ const GlobalStyle = createGlobalStyle`
 :root {
    /*Color*/
     --main-color: #eeeeee;
-    --point-color: #4477ce;
+    --point-color: #0171E2;
     --dark-color: #181617;
     /* FontSize */
+    --small-font: 1.0rem;
     --main-font : 1.2rem;
     --title-font : 2.0rem;
     --subtitle-font: 1.5rem;
-    --big-font: 2.2rem;
+    --big-font: 3.3rem;
     /* FontWeight*/
     --regular-weight: 400;
     --medeum-weight: 500;
@@ -35,7 +36,6 @@ time, mark, audio, video {
   font-family: 'Noto Sans', sans-serif;
   font-size : 100%;
   vertical-align: baseline;
-  color: black;  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -49,6 +49,8 @@ footer, header, hgroup, main, menu, nav, section {
 body {
   line-height: 1;
   overflow-x :  hidden;
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.textColor};
 }
 menu, ol, ul {
   list-style: none;
@@ -75,6 +77,7 @@ a {
   text-decoration:none;
   color:inherit;
 }
+
 `;
 
 export default GlobalStyle;

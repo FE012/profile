@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const InfoBox = styled.section`
@@ -14,8 +13,16 @@ function Information() {
   return (
     <InfoBox>
       <div>📧 twte96@gmail.com</div>
-      <Link to="https://github.com/FE012">👩🏻‍💻 Github</Link>
-      <Link to="https://velog.io/@developer09">🏠 Blog</Link>
+      <a
+        href="https://github.com/FE012"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        👩🏻‍💻 GitHub
+      </a>
+      <a href="https://velog.io/@developer09" target="_blank" rel="noreferrer">
+        🏠 Blog
+      </a>
       <div>📱 010-4128-5209</div>
     </InfoBox>
   );

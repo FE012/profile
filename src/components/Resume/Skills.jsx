@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { skillsData } from "../data.js/skillsData";
+import { skillsData } from "../../data/skillsData";
 
 const LogoImg = styled.img`
   width: 45px;
