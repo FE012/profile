@@ -10,6 +10,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   background-color: ${(props) => props.theme.bgColor};
   h1 {
     margin-bottom: 10px;
@@ -22,7 +23,7 @@ const NameBox = styled.div`
   font-weight: var(--bold-weight);
   font-size: var(--big-font);
   margin-bottom: 15px;
-  @media (max-width: 720px) {
+  @media (max-width: 790px) {
     font-size: var(--title-font);
   }
 `;
@@ -37,7 +38,7 @@ const LinkBox = styled.div`
   :hover {
     color: var(--point-color);
   }
-  @media (max-width: 680px) {
+  @media (max-width: 790px) {
     font-size: var(--small-font);
   }
 `;
