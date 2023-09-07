@@ -17,7 +17,6 @@ const Nav = styled.nav`
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
-  z-index: -1;
 `;
 
 const Col = styled.div`
@@ -72,7 +71,7 @@ function Headers() {
           </Item>
           <Item>
             <Link to="/resume">
-              Resume
+              Resume{" "}
               {pageSelect.pathname === "/resume" && (
                 <HeartIcon icon={faHeart} layoutId="circle" />
               )}

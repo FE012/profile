@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --main-font : 1.2rem;
     --title-font : 2.0rem;
     --subtitle-font: 1.5rem;
-    --big-font: 3.3rem;
+    --big-font: 3.5rem;
     /* FontWeight*/
     --regular-weight: 400;
     --medeum-weight: 500;
