@@ -81,7 +81,7 @@ function Headers() {
       </Col>
       <Col>
         <Items>
-          <Item>프린트</Item>
+          {/* <Item>프린트</Item> */}
           <Item>
             <Link to="https://github.com/FE012/resume">
               <FontAwesomeIcon icon={faGithub} size="xl" />
