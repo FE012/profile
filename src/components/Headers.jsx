@@ -12,7 +12,7 @@ const Nav = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
-  font-size: var(--main-font);
+  font-size: var(--subtitle-font);
   padding: 20px 60px;
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
