@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Defined from "../components/Resume/Defined";
+import Education from "../components/Resume/Education";
 import Information from "../components/Resume/Information";
 import Introduce from "../components/Resume/Introduce";
 import Profile from "../components/Resume/Profile";
@@ -18,12 +20,16 @@ function Resume() {
       <Profile />
       {/* 개인정보 */}
       <Information />
-      {/* 자기소개 */}
+      {/* 자기소개-개발을 왜 하게 되었는지*/}
       <Introduce />
+      {/* 자기소개-개발자로서 정의*/}
+      <Defined />
       {/* 기술 스택 */}
-      <Skills></Skills>
+      <Skills />
       {/* 프로젝트 */}
-      <Project></Project>
+      <Project />
+      {/* 교육 */}
+      {/* <Education /> */}
     </Wrapper>
   );
 }
