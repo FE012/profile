@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { skillsData } from "../../data/skillsData";
+import { Title } from "./Introduce";
 
 const LogoImg = styled.img`
   width: 45px;
@@ -9,12 +10,6 @@ const LogoImg = styled.img`
 
 const SkillBox = styled.section`
   margin-bottom: 25px;
-  h2 {
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    font-size: var(--title-font);
-    border-bottom: 2px solid var(--main-color);
-  }
   ul li {
     display: flex;
     align-items: center;
@@ -35,7 +30,7 @@ const SkillBox = styled.section`
 function Skills() {
   return (
     <SkillBox>
-      <h2>🛠 기술 스택</h2>
+      <Title>🛠 기술 스택</Title>
       {skillsData.map((skill) => (
         <section key={skill.id}>
           <ul>
