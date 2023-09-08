@@ -7,10 +7,9 @@ const GlobalStyle = createGlobalStyle`
     --point-color: #0171E2;
     --dark-color: #181617;
     /* FontSize */
-    --small-font: 1.0rem;
-    --main-font : 1.2rem;
+    --main-font : 1.1rem;
     --title-font : 2.0rem;
-    --subtitle-font: 1.5rem;
+    --subtitle-font: 1.4rem;
     --big-font: 3.5rem;
     /* FontWeight*/
     --regular-weight: 400;
@@ -34,7 +33,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-family: 'Noto Sans', sans-serif;
-  font-size : 100%;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
