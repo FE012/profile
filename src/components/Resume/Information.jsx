@@ -6,7 +6,7 @@ const InfoBox = styled.section`
   flex-direction: column;
   justify-content: space-between;
   text-decoration: underline;
-  font-weight: var(--medeum-weight);
+  font-weight: var(--bold-weight);
 `;
 
 function Information() {

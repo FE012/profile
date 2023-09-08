@@ -21,7 +21,7 @@ function Profile() {
   return (
     <Section>
       <Photo />
-      <Name>몰입을 즐기는 프론트엔드 개발자, 김예본입니다.</Name>
+      <Name> 프론트엔드 개발자 김예본입니다.</Name>
     </Section>
   );
 }
