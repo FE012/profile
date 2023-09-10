@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import profileImg from "../../assests/image/profileImg.png";
 
-const Section = styled.section`
+const ProfileBox = styled.article`
   margin-top: 35px;
 `;
 const Photo = styled.div`
@@ -19,10 +19,10 @@ const Name = styled.h1`
 
 function Profile() {
   return (
-    <Section>
+    <ProfileBox>
       <Photo />
       <Name> 프론트엔드 개발자 김예본입니다.</Name>
-    </Section>
+    </ProfileBox>
   );
 }
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Title } from "../Resume/Title";
 
-const IntroduceBox = styled.section`
+const IntroduceBox = styled.article`
   margin-top: 35px;
   margin-bottom: 35px;
   p {
@@ -9,15 +10,6 @@ const IntroduceBox = styled.section`
     margin-bottom: 1rem;
     line-height: 1.5;
   }
-`;
-
-// 전역으로 쓰는 제목
-export const Title = styled.h2`
-  padding-bottom: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: var(--title-font);
-  border-bottom: 2px solid var(--main-color);
 `;
 
 function Introduce() {
@@ -55,7 +47,6 @@ function Introduce() {
         되었습니다. 이런 사이트를 어떻게 만드는지 찾아보다가 프론트엔드 개발자가
         눈에 보이는 것들을 만든다는 것을 알게 되었습니다. 이외에도
         <strong>
-          {" "}
           평소에 사용하기 불편했던 웹 들을 경험하면서 사용자 친화적인 UX 웹을
           만드는 일에 기여하고 싶어 프론트엔드 개발을 선택하게 되었습니다.
         </strong>
