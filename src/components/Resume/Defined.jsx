@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { DefinedData } from "../../data/DefinedData";
-import { Title } from "./Introduce";
+import { Title } from "../Resume/Title";
 
-const IntroduceBox = styled.section`
+const DefinedBox = styled.article`
   margin-top: 35px;
   margin-bottom: 35px;
   li {
@@ -21,7 +21,7 @@ const IntroduceBox = styled.section`
 
 function Defined() {
   return (
-    <IntroduceBox>
+    <DefinedBox>
       <Title>🙌 저는 이런 개발자입니다</Title>
       {DefinedData.map((data, id) => (
         <>
@@ -37,7 +37,7 @@ function Defined() {
           </ul>
         </>
       ))}
-    </IntroduceBox>
+    </DefinedBox>
   );
 }
 
