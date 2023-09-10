@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { projectData } from "../../data/projectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Title } from "./Introduce";
+import { Title } from "../Resume/Title";
 
 const ProjectBox = styled.article`
   display: flex;
