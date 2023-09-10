@@ -29,7 +29,7 @@ function Resume() {
       {/* 프로젝트 */}
       <Project />
       {/* 교육 */}
-      {/* <Education /> */}
+      <Education />
     </Wrapper>
   );
 }
