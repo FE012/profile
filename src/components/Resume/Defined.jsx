@@ -30,7 +30,10 @@ function Defined() {
             <li>{data.content1}</li>
             {data.content2 && data.id !== 2 ? <li>{data.content2}</li> : ""}
             {data.content2 && data.id === 2 ? (
-              <a href={data.content2}> 👉🏼 블로그</a>
+              <a href={data.content2} target="_blank" rel="noreferrer">
+                {" "}
+                👉🏼 블로그
+              </a>
             ) : (
               ""
             )}
