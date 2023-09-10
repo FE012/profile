@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const InfoBox = styled.section`
-  height: 15vh;
+const InfoBox = styled.article`
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
