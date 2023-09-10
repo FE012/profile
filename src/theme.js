@@ -4,6 +4,7 @@ export const darkTheme = {
   textColor: "#f5f6fa",
   accentColor: "#0171E2",
   toggleBgColor: "#3b3b3b",
+  grayBoxColor: "#3f4042",
 };
 
 export const lightTheme = {
@@ -12,4 +13,5 @@ export const lightTheme = {
   textColor: "black",
   accentColor: "#0171E2",
   toggleBgColor: "#eeeeee",
+  grayBoxColor: "#fafafa",
 };
