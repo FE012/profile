@@ -5,13 +5,14 @@ import htmlLogo from "../assests/image/htmlLogo.png";
 import cssLogo from "../assests/image/cssLogo.png";
 import reduxLogo from "../assests/image/reduxLogo.png";
 import styledComponentsLogo from "../assests/image/styledComponentsLogo.png";
+
 export const skillsData = [
   {
     id: 0,
     logoImg: jsLogo,
     name: "JavaScript",
     content:
-      " 구조분해할당, spread 구문 등 ES6 문법 사용과 주요 Array 내장 메서드에 사용에 익숙합니다.",
+      "구조분해할당, spread 구문 등 ES6 문법 사용과 주요 Array 내장 메서드에 사용에 익숙합니다.",
   },
   {
     id: 1,
