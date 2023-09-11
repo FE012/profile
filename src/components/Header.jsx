@@ -54,7 +54,7 @@ const HeartIcon = styled(motion(FontAwesomeIcon))`
   color: var(--point-color);
 `;
 
-function Headers() {
+function Header() {
   const pageSelect = useLocation();
 
   return (
@@ -93,4 +93,4 @@ function Headers() {
   );
 }
 
-export default Headers;
+export default Header;
