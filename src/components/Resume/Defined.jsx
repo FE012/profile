@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { DefinedData } from "../../data/DefinedData";
 import { Title } from "../Resume/Title";
@@ -24,7 +25,7 @@ function Defined() {
     <DefinedBox>
       <Title>🙌 저는 이런 개발자입니다</Title>
       {DefinedData.map((data, id) => (
-        <>
+        <React.Fragment key={id}>
           <h3>{data.title}</h3>
           <ul>
             <li>{data.content1}</li>
@@ -38,7 +39,7 @@ function Defined() {
               ""
             )}
           </ul>
-        </>
+        </React.Fragment>
       ))}
     </DefinedBox>
   );

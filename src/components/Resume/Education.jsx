@@ -44,8 +44,8 @@ function Education() {
         <li>과정</li>
         <li>기간</li>
         <li>수료증</li>
-        {EducationData.map((edu) => (
-          <>
+        {EducationData.map((edu, id) => (
+          <React.Fragment key={id}>
             <li>
               <a href={edu.site} target="_blank" rel="noreferrer">
                 {edu.course}
@@ -70,7 +70,7 @@ function Education() {
                 ""
               )}
             </li>
-          </>
+          </React.Fragment>
         ))}
       </Ul>
     </EducationBox>

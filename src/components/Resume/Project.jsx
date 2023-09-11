@@ -95,8 +95,8 @@ function Project() {
   return (
     <>
       <Title>📂 프로젝트</Title>
-      {projectData.map((project) => (
-        <ProjectBox key={project.id}>
+      {projectData.map((project, id) => (
+        <ProjectBox key={id}>
           <LightSection>
             {project.id === 1 ? (
               <ProjectImg src={project.img} />
@@ -137,8 +137,8 @@ function Project() {
               {project.planning && project.planning.length > 0 ? (
                 <Planning>
                   [기획 및 디자인]
-                  {project.planning.map((planning) => (
-                    <li>{planning}</li>
+                  {project.planning.map((planning, index) => (
+                    <li key={index}>{planning}</li>
                   ))}
                 </Planning>
               ) : (
@@ -149,8 +149,8 @@ function Project() {
               {project.realization && project.realization.length > 0 ? (
                 <Realization>
                   [기능 구현]
-                  {project.realization.map((realization) => (
-                    <li>{realization}</li>
+                  {project.realization.map((realization, index) => (
+                    <li key={index}>{realization}</li>
                   ))}
                 </Realization>
               ) : (

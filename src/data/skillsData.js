@@ -48,7 +48,7 @@ export const skillsData = [
       "div 태그를 사용하기 보다 때에 맞는 Semantic 태그를 사용해 웹 접근성을 향상시키는 마크업을 작성합니다.",
   },
   {
-    id: 4,
+    id: 6,
     logoImg: cssLogo,
     name: "CSS3",
     content:
