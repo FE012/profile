@@ -23,16 +23,31 @@ const Button = styled.button`
 `;
 
 function App() {
-  const isDark = useRecoilValue(isDarkAtom);
-  const setDarkAtom = useSetRecoilState(isDarkAtom);
-  const toggleDark = () => setDarkAtom((prev) => !prev);
+  const darkMode = useRecoilValue(isDarkAtom);
+  const setDarkMode = useSetRecoilState(isDarkAtom);
+
+  // 로컬 스토리지에서 설정을 불러오기
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+    if (savedDarkMode !== null) {
+      // 로컬 스토리지에 값이 저장되어 있다면 해당 값으로 Recoil 상태를 초기화
+      setDarkMode(JSON.parse(savedDarkMode));
+    }
+  }, [setDarkMode]);
+
+  // 설정이 변경될 때 로컬 스토리지에 저장
+  useEffect(() => {
+    localStorage.setItem("darkMode", darkMode.toString());
+  }, [darkMode]);
+
+  const toggleDark = () => setDarkMode((prev) => !prev);
 
   return (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Header />
       <Button onClick={toggleDark}>
-        {isDark ? (
+        {darkMode ? (
           <FontAwesomeIcon icon={faMoon} size="2xl" />
         ) : (
           <FontAwesomeIcon icon={faSun} size="2xl" />
