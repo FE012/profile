@@ -3,7 +3,6 @@ import { Title } from "../Resume/Title";
 
 const IntroduceBox = styled.article`
   margin-top: 35px;
-  margin-bottom: 35px;
   p {
     font-size: var(--main-font);
     font-weight: var(--regular-weight);
