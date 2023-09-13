@@ -9,6 +9,10 @@ const ProjectBox = styled.article`
   margin-bottom: 35px;
   padding-bottom: 35px;
   border-bottom: 1px solid var(--main-color);
+  @media screen and (max-width: 790px) {
+    display: flex;
+    flex-direction: column;
+  }
   button {
     border: none;
     cursor: pointer;
@@ -37,7 +41,7 @@ const ProjectBox = styled.article`
   }
 `;
 
-const LightSection = styled.section`
+const LeftSection = styled.section`
   margin-right: 30px;
 `;
 
@@ -46,11 +50,18 @@ const RightSection = styled.section`
   flex-direction: column;
   justify-content: space-around;
   min-height: 400px;
+  @media screen and (max-width: 790px) {
+    > * {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 const ProjectImg = styled.img`
   width: 400px;
-  max-height: 550px;
+  @media screen and (max-width: 790px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const Name = styled.h3`
@@ -97,13 +108,13 @@ function Project() {
       <Title>📂 프로젝트</Title>
       {projectData.map((project, id) => (
         <ProjectBox key={id}>
-          <LightSection>
+          <LeftSection>
             {project.id === 1 ? (
               <ProjectImg src={project.img} />
             ) : (
               <ProjectImg src={project.img} />
             )}
-          </LightSection>
+          </LeftSection>
           <RightSection>
             <div>
               <a
