@@ -8,6 +8,8 @@ import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { isDarkAtom } from "./Recoil/atoms";
 import { useEffect } from "react";
+import Router from "../src/components/Router";
+import { BrowserRouter } from "react-router-dom";
 
 // 라이트/다크 모드 버튼
 const Button = styled.button`
@@ -44,17 +46,20 @@ function App() {
   const toggleDark = () => setDarkMode((prev) => !prev);
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <GlobalStyle />
-      <Header />
-      <Button onClick={toggleDark}>
-        {darkMode ? (
-          <FontAwesomeIcon icon={faMoon} size="2xl" />
-        ) : (
-          <FontAwesomeIcon icon={faSun} size="2xl" />
-        )}
-      </Button>
-    </ThemeProvider>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <GlobalStyle />
+        <Header />
+        <Button onClick={toggleDark}>
+          {darkMode ? (
+            <FontAwesomeIcon icon={faMoon} size="2xl" />
+          ) : (
+            <FontAwesomeIcon icon={faSun} size="2xl" />
+          )}
+        </Button>
+        <Router />
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
