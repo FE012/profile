@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { skillsData } from "../../data/skillsData";
 import { Title } from "../Resume/Title";
+import MakeTextBold from "../../utils/MakeTextBold.jsx";
 
 const LogoImg = styled.img`
   width: 45px;
@@ -38,10 +39,8 @@ function Skills() {
               <LogoImg src={skill.logoImg} />
               <div>
                 <h3>{skill.name}</h3>
-                {/* <p>
-                  {makeTextBold(skill.content, ["특정텍스트1", "특정텍스트2", "특정텍스트3"])}
-                </p> */}
-                <p>{skill.content}</p>
+                {/* 특정 글씨 진하게 처리 컴포넌트 */}
+                <MakeTextBold>{skill.content}</MakeTextBold>
               </div>
             </li>
           </ul>

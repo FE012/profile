@@ -3,6 +3,7 @@ import { projectData } from "../../data/projectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Title } from "../Resume/Title";
+import MakeTextBold from "../../utils/MakeTextBold.jsx";
 
 const ProjectBox = styled.article`
   display: flex;
@@ -71,6 +72,10 @@ const Name = styled.h3`
 const Summary = styled.h4``;
 
 const Period = styled.h4`
+  color: #61677a;
+`;
+
+const Position = styled.h4`
   color: #61677a;
 `;
 
@@ -143,6 +148,11 @@ function Project() {
             <Name>{project.name}</Name>
             <Summary>[프로젝트 개요] {project.summary}</Summary>
             <Period> [작업 기간] {project.period}</Period>
+            {project.position ? (
+              <Position>[직책] {project.position}</Position>
+            ) : (
+              ""
+            )}
             <Skills>{project.skills} </Skills>
             <Planning>
               {project.planning && project.planning.length > 0 ? (
@@ -161,7 +171,9 @@ function Project() {
                 <Realization>
                   [기능 구현]
                   {project.realization.map((realization, index) => (
-                    <li key={index}>{realization}</li>
+                    <li key={index}>
+                      <MakeTextBold>{realization}</MakeTextBold>
+                    </li>
                   ))}
                 </Realization>
               ) : (
