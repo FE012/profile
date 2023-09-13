@@ -23,7 +23,7 @@ const NameBox = styled.div`
   font-weight: var(--bold-weight);
   font-size: var(--big-font);
   margin-bottom: 15px;
-  @media (max-width: 790px) {
+  @media screen and (max-width: 790px) {
     font-size: var(--title-font);
   }
 `;
