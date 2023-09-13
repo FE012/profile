@@ -14,7 +14,7 @@ const Section = styled.section`
   background-color: ${(props) => props.theme.bgColor};
   h1 {
     margin-bottom: 10px;
-    color: ${(props) => props.theme.textColor};
+    color: ${(props) => props.theme.accentColor};
   }
 `;
 
@@ -24,7 +24,7 @@ const NameBox = styled.div`
   font-size: var(--big-font);
   margin-bottom: 15px;
   @media screen and (max-width: 790px) {
-    font-size: var(--title-font);
+    font-size: var(--subtitle-font);
   }
 `;
 
@@ -48,7 +48,7 @@ function WelcomeAnimation() {
     <Section>
       <NameBox>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2.0 }}
           style={{ color: "var(--point-color)" }}
