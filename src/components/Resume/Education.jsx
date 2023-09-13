@@ -3,18 +3,25 @@ import styled from "styled-components";
 import { Title } from "../Resume/Title";
 import { EducationData } from "../../data/EducationData";
 
-const EducationBox = styled.article``;
+const EducationBox = styled.article`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media screen and (max-width: 790px) {
+    width: 100%;
+  }
+`;
 
 const Ul = styled.ul`
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.1fr;
+  grid-template-columns: 1fr 1fr 60px;
   gap: 10px;
   li {
     padding: 5px 5px;
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    background-color: ${(props) => props.theme.greyBoxColor};
+    background-color: ${(props) => props.theme.grayBoxColor};
     font-size: var(--main-font);
     a {
       padding-bottom: 2px;
@@ -33,6 +40,12 @@ const Ul = styled.ul`
   li:nth-child(3n) {
     display: flex;
     justify-content: center;
+  }
+  li:nth-child(3n + 1) {
+    color: var(--point-color);
+  }
+  li:first-of-type {
+    color: ${(props) => props.theme.textColor};
   }
 `;
 
