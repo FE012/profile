@@ -13,7 +13,7 @@ const Nav = styled.nav`
   width: 100%;
   top: 0;
   font-size: var(--subtitle-font);
-  padding: 20px 60px;
+  padding: 20px;
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
@@ -30,7 +30,7 @@ const Items = styled.ul`
 `;
 
 const Item = styled.li`
-  margin-right: 30px;
+  margin: 0px 15px;
   transition: color 0.3s ease-in-out;
   position: relative;
   display: flex;
