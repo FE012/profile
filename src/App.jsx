@@ -9,10 +9,11 @@ import { useRecoilValue, useSetRecoilState } from "recoil";
 import { isDarkAtom } from "./Recoil/atoms";
 import { useEffect } from "react";
 
+// 라이트/다크 모드 버튼
 const Button = styled.button`
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 15px;
+  right: 15px;
   width: 75px;
   height: 75px;
   border-radius: 50%;
