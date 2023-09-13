@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Defined from "../components/Resume/Defined";
 import Education from "../components/Resume/Education";
-import Information from "../components/Resume/Information";
 import Introduce from "../components/Resume/Introduce";
 import Profile from "../components/Resume/Profile";
 import Project from "../components/Resume/Project";
@@ -10,16 +9,18 @@ import Skills from "../components/Resume/Skills";
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 70px 100px 70px 100px;
+  margin: 70px 100px;
+  //resume page 반응형
+  @media screen and (max-width: 790px) {
+    margin: 70px 20px;
+  }
 `;
 
 function Resume() {
   return (
     <Wrapper>
-      {/* 프로필 사진과 소개말 */}
+      {/* 프로필 사진과 정보 */}
       <Profile />
-      {/* 개인정보 */}
-      <Information />
       {/* 자기소개-개발을 왜 하게 되었는지*/}
       <Introduce />
       {/* 자기소개-개발자로서 정의*/}

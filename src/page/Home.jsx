@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import WelcomeAnimation from "../components/home/WelcomeAnimation";
 
-const Section = styled.section``;
+const Wrapper = styled.section``;
 
 function Home() {
   return (
-    <Section>
+    <Wrapper>
       <WelcomeAnimation />
-    </Section>
+    </Wrapper>
   );
 }
 
