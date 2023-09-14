@@ -23,14 +23,14 @@ function Resume() {
       <Profile />
       {/* 자기소개-개발을 왜 하게 되었는지*/}
       <Introduce />
-      {/* 자기소개-개발자로서 정의*/}
-      <Defined />
-      {/* 기술 스택 */}
-      <Skills />
-      {/* 프로젝트 */}
-      <Project />
       {/* 교육 */}
       <Education />
+      {/* 기술 스택 */}
+      <Skills />
+      {/* 자기소개-개발자로서 정의*/}
+      <Defined />
+      {/* 프로젝트 */}
+      <Project />
     </Wrapper>
   );
 }

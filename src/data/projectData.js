@@ -25,7 +25,7 @@ export const projectData = [
     realization: [
       "**유저 마이페이지, 프로필 수정페이지, 유저 신고페이지 담당 개발**",
       "수정 상태에 따라 버튼의 활성화 여부를 바꾸는 것이 적합하다 생각해서 input을 제어 컴포넌트로 구현했습니다.",
-      "프로필 이미지 업로드 미리보기 기능을 구현했습니다.",
+      "프로필 이미지 미리보기 기능을 구현했습니다.",
       "비동기 데이터 관리의 불편함을 해소하기 위해 React-query를 사용했습니다.",
       "React-query로 로딩 상태에 따른 처리를 하여 사용자에게 빈 화면을 보여주지 않고, 로딩 컴포넌트를 보여줌으로써 UX를 향상시켰습니다.",
       "팀원들과 같이 사용할 수 있도록 공통 컴포넌트를 제작했습니다.",
@@ -46,10 +46,10 @@ export const projectData = [
       "#React, #TypeScript, #React-query, #React-hook-form, #Styled-components, #Framer Motion",
     planning: [],
     realization: [
-      "Framer Motion 을 사용한 로고, 검색영역 등 애니메이션 구현",
       "React-query를 사용해 영화정보 API 불러오기 구현",
       "React-hook-form을 사용한 영화 검색 기능 구현",
-      "영화 슬라이드 및 모달창  Hover, Click 애니메이션 구현",
+      "Framer Motion 을 사용한 로고, 검색영역 등 애니메이션 구현",
+      "영화 슬라이드 및 모달창 애니메이션 구현",
       "TypeScript 적용",
     ],
   },
