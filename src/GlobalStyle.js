@@ -75,11 +75,6 @@ a {
   text-decoration:none;
   color:inherit;
 }
-@media print {
-    * {
-      font-family: unset !important;
-    }
-  }
 
 `;
 
