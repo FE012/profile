@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 :root {
    /*Color*/
     --main-color: #eeeeee;
@@ -14,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     /* FontWeight*/
     --regular-weight: 400;
     --medeum-weight: 500;
-    --bold-weight: 700;
+    --bold-weight: 600;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,8 +33,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Noto Sans', sans-serif;
   vertical-align: baseline;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -68,9 +69,7 @@ table {
 * {
   box-sizing: border-box;
 }
-body {
-  line-height: 1.2;
-}
+
 a {
   text-decoration:none;
   color:inherit;
