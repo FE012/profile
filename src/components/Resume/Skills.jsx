@@ -10,7 +10,6 @@ const LogoImg = styled.img`
 `;
 
 const SkillsBox = styled.article`
-  margin-bottom: 25px;
   ul li {
     display: flex;
     align-items: center;

@@ -7,8 +7,6 @@ import MakeTextBold from "../../utils/MakeTextBold.jsx";
 
 const ProjectBox = styled.article`
   display: flex;
-  margin-bottom: 35px;
-  padding-bottom: 35px;
   border-bottom: 1px solid var(--main-color);
   @media screen and (max-width: 790px) {
     display: flex;
@@ -44,6 +42,9 @@ const ProjectBox = styled.article`
 
 const LeftSection = styled.section`
   margin-right: 30px;
+  @media print {
+    width: 30%;
+  }
 `;
 
 const RightSection = styled.section`
@@ -56,12 +57,20 @@ const RightSection = styled.section`
       margin-bottom: 10px;
     }
   }
+  @media print {
+    > * {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 const ProjectImg = styled.img`
   width: 400px;
   @media screen and (max-width: 790px) {
     margin-bottom: 10px;
+  }
+  @media print {
+    width: 100%;
   }
 `;
 
@@ -110,7 +119,9 @@ const Realization = styled.ul`
 function Project() {
   return (
     <>
-      <Title>📂 프로젝트</Title>
+      <Title>
+        <span>📂</span> 프로젝트
+      </Title>
       {projectData.map((project, id) => (
         <ProjectBox key={id}>
           <LeftSection>
