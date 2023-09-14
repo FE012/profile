@@ -17,6 +17,9 @@ const Nav = styled.nav`
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
+  @media print {
+    display: none !important;
+  }
 `;
 
 const Col = styled.div`

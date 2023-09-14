@@ -17,7 +17,12 @@ const Photo = styled.div`
   background-size: cover;
   margin-right: 50px;
   @media screen and (max-width: 790px) {
+    width: 200px;
+    height: 200px;
     margin-bottom: 50px;
+  }
+  @media print {
+    display: none !important;
   }
 `;
 
@@ -49,7 +54,7 @@ function Profile() {
       <InfoBox>
         <Name> 🙌 프론트엔드 개발자 김예본입니다.</Name>
         <Info>
-          <p>📧 twte96@gmail.com</p>
+          <a href="mailto:twte96@gmail.com">📧 twte96@gmail.com</a>
           <a
             href="https://github.com/FE012"
             target="_blank"
