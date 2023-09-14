@@ -1,10 +1,10 @@
-import reactLogo from "../assests/image/reactLogo.png";
-import recoilLogo from "../assests/image/recoilLogo.png";
-import jsLogo from "../assests/image/jsLogo.png";
-import htmlLogo from "../assests/image/htmlLogo.png";
-import cssLogo from "../assests/image/cssLogo.png";
-import reduxLogo from "../assests/image/reduxLogo.png";
-import styledComponentsLogo from "../assests/image/styledComponentsLogo.png";
+import reactLogo from "../assets/image/reactLogo.png";
+import recoilLogo from "../assets/image/recoilLogo.png";
+import jsLogo from "../assets/image/jsLogo.png";
+import htmlLogo from "../assets/image/htmlLogo.png";
+import cssLogo from "../assets/image/cssLogo.png";
+import reduxLogo from "../assets/image/reduxLogo.png";
+import styledComponentsLogo from "../assets/image/styledComponentsLogo.png";
 
 export const skillsData = [
   {

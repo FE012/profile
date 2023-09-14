@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import profileImg from "../../assests/image/profileImg.png";
+import profileImg from "../../assets/image/profileImg.png";
 
 const ProfileBox = styled.article`
   display: flex;

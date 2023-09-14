@@ -1,7 +1,7 @@
-import projectImg from "../assests/image/projectImg.png";
-import coinImg from "../assests/image/coinImg.png";
-import toDoImg from "../assests/image/toDoImg.png";
-import NomflixImg from "../assests/image/nomflixImg.png";
+import projectImg from "../assets/image/projectImg.png";
+import coinImg from "../assets/image/coinImg.png";
+import toDoImg from "../assets/image/toDoImg.png";
+import NomflixImg from "../assets/image/nomflixImg.png";
 
 export const projectData = [
   {
