@@ -12,7 +12,7 @@ const Section = styled.section`
   align-items: center;
   overflow-y: hidden;
   background-color: ${(props) => props.theme.bgColor};
-  h1 {
+  p {
     margin-bottom: 10px;
     color: ${(props) => props.theme.accentColor};
   }
@@ -20,7 +20,7 @@ const Section = styled.section`
 
 const NameBox = styled.div`
   text-align: center;
-  font-weight: var(--bold-weight);
+  font-weight: var(--medeum-weight);
   font-size: var(--big-font);
   margin-bottom: 15px;
   @media screen and (max-width: 790px) {
@@ -34,7 +34,7 @@ const TypewriterWithCustomStyle = styled(Typewriter)`
 
 const LinkBox = styled.div`
   font-size: var(--main-font);
-  font-weight: var(--bold-weight);
+  font-weight: var(--medeum-weight);
   :hover {
     color: var(--point-color);
   }
@@ -53,7 +53,7 @@ function WelcomeAnimation() {
           transition={{ duration: 2.0 }}
           style={{ color: "var(--point-color)" }}
         >
-          <h1>웹을 통해 아이디어를 현실로 만드는</h1>
+          <p>웹을 통해 아이디어를 현실로 만드는</p>
           <TypewriterWithCustomStyle
             words={["", "프론트엔드 개발자 김예본입니다."]}
             cursor
