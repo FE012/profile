@@ -4,8 +4,6 @@ import { DefinedData } from "../../data/DefinedData";
 import { Title } from "../Resume/Title";
 
 const DefinedBox = styled.article`
-  margin-top: 35px;
-  margin-bottom: 35px;
   li {
     font-size: var(--main-font);
     font-weight: var(--regular-weight);
