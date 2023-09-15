@@ -8,7 +8,7 @@ import MakeTextBold from "../../utils/MakeTextBold.jsx";
 const ProjectBox = styled.article`
   display: flex;
   border-bottom: 1px solid var(--main-color);
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   @media screen and (max-width: 790px) {
     display: flex;
     flex-direction: column;
