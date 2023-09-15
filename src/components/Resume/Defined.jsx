@@ -21,7 +21,7 @@ const DefinedBox = styled.article`
 function Defined() {
   return (
     <DefinedBox>
-      <Title>🙌 저는 이런 개발자입니다</Title>
+      <Title>👩🏻‍💻 저는 이런 개발자입니다</Title>
       {DefinedData.map((data, id) => (
         <React.Fragment key={id}>
           <h3>{data.title}</h3>
