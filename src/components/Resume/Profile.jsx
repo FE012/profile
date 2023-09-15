@@ -29,7 +29,7 @@ const Photo = styled.div`
 const Name = styled.h1`
   font-size: var(--title-font);
   margin-bottom: 35px;
-  font-weight: var(--bold-weight);
+  font-weight: var(--medeum-weight);
 `;
 
 const InfoBox = styled.section`
@@ -44,7 +44,7 @@ const Info = styled.div`
   flex-direction: column;
   justify-content: space-between;
   text-decoration: underline;
-  font-weight: var(--bold-weight);
+  font-weight: var(--medeum-weight);
 `;
 
 function Profile() {
