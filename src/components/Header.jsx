@@ -17,6 +17,9 @@ const Nav = styled.nav`
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
+  @media screen and (max-width: 790px) {
+    font-size: var(--main-font);
+  }
   @media print {
     display: none !important;
   }
@@ -50,7 +53,7 @@ const HeartIcon = styled(motion(FontAwesomeIcon))`
   position: absolute;
   width: 10px;
   height: 10px;
-  bottom: -8px;
+  bottom: -13px;
   left: 0;
   right: 0;
   margin: 0 auto;
