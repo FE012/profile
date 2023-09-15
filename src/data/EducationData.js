@@ -28,7 +28,7 @@ export const EducationData = [
     course: "코드스테이츠 - 프론트엔드 개발자 부트캠프 (📎커리큘럼)",
     period: "2022.08 - 2023.02 (6개월)",
     vlog: "https://velog.io/@developer09/series/TIL",
-    site: "https://www.codestates.com/course/frontend-engineering?gclid=CjwKCAjw5P2aBhAlEiwAAdY7dMdI6OKTI-9GmijFvfouSMqLb160-nc5GuQYxtocIQ2ipyjhhoOcuxoCTTIQAvD_BwE",
+    site: "https://www.codestates.com/course/frontend-engineering?gclid=CjwKCAjw5P2aBhAlEiwAAdY7dMdI6OKTI-9GmijFvfouSMqLb160-nc5GuQYxtocIQ2ipyjhhoOcuxoCTTIQAvD_BwE#curriculum",
     certificates:
       "https://drive.google.com/file/d/1s6T5VGguIKRB-w0tM4kSo6nfJ5Tb5Pu4/view?usp=sharing",
   },
