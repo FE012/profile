@@ -19,7 +19,7 @@ export const skillsData = [
     logoImg: reactLogo,
     name: "React",
     content:
-      "**컴포넌트의 재사용**과 **유지보수의 향상**을 위해 컴포넌트 단위로 코드를 작성 하며, useState, useEffect, useRef 같은 기본적인 hook 사용에 능숙합니다. ",
+      "virutal DOM의 장단점을 알고 **컴포넌트의 재사용**과 **유지보수의 향상**을 위해 컴포넌트 단위로 코드를 작성 합니다. useState, useEffect, useRef 같은 기본적인 hook 사용에 능숙합니다. ",
   },
   {
     id: 2,
