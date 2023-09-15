@@ -47,10 +47,10 @@ export const projectData = [
     planning: [],
     realization: [
       "React-query를 사용해 영화정보 API 불러오기 구현",
-      "React-hook-form을 사용한 영화 검색 기능 구현",
+      "영화 검색 기능 구현",
+      "TypeScript 적용",
       "Framer Motion 을 사용한 로고, 검색영역 등 애니메이션 구현",
       "영화 슬라이드 및 모달창 애니메이션 구현",
-      "TypeScript 적용",
     ],
   },
   {
