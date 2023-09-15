@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
- @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800");
 :root {
    /*Color*/
     --main-color: #eeeeee;
