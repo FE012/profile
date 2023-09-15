@@ -7,7 +7,7 @@ const IntroduceBox = styled.article`
     font-size: var(--main-font);
     font-weight: var(--regular-weight);
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 `;
 
