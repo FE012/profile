@@ -23,7 +23,7 @@ const NameBox = styled.div`
   font-weight: var(--medeum-weight);
   font-size: var(--big-font);
   margin-bottom: 15px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     font-size: var(--subtitle-font);
   }
 `;
@@ -38,7 +38,7 @@ const LinkBox = styled.div`
   :hover {
     color: var(--point-color);
   }
-  @media (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     font-size: var(--small-font);
   }
 `;

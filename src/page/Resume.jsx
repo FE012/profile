@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   margin: 70px 100px;
   //resume page 반응형
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     margin: 70px 20px;
   }
 `;

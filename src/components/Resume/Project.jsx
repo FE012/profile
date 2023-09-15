@@ -9,7 +9,7 @@ const ProjectBox = styled.article`
   display: flex;
   border-bottom: 1px solid var(--main-color);
   margin-bottom: 40px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
   }
@@ -53,7 +53,7 @@ const RightSection = styled.section`
   flex-direction: column;
   justify-content: space-around;
   min-height: 400px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     > * {
       margin-bottom: 10px;
     }
@@ -67,7 +67,7 @@ const RightSection = styled.section`
 
 const ProjectImg = styled.img`
   width: 400px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     margin-bottom: 10px;
   }
   @media print {

@@ -4,7 +4,7 @@ import profileImg from "../../assets/image/profileImg.png";
 const ProfileBox = styled.article`
   display: flex;
   padding-top: 50px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
   }
@@ -16,7 +16,7 @@ const Photo = styled.div`
   background-image: url(${profileImg});
   background-size: cover;
   margin-right: 50px;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     width: 200px;
     height: 200px;
     margin-bottom: 50px;

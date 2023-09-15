@@ -17,7 +17,7 @@ const Nav = styled.nav`
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.textColor};
   border-bottom: 1px solid var(--main-color);
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     font-size: var(--main-font);
   }
   @media print {

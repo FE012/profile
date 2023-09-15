@@ -7,7 +7,7 @@ const EducationBox = styled.article`
   display: flex;
   flex-direction: column;
   width: 100%;
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
   }
 `;
