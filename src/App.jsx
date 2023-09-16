@@ -22,6 +22,9 @@ const Button = styled.button`
   cursor: pointer;
   background-color: ${(props) => props.theme.toggleBgColor};
   color: ${(props) => props.theme.accentColor};
+  @media print {
+    display: none;
+  }
 `;
 
 function App() {
