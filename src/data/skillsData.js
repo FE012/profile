@@ -19,13 +19,13 @@ export const skillsData = [
     logoImg: reactLogo,
     name: "React",
     content:
-      "Virtual DOM의 장단점을 알고 **컴포넌트의 재사용**과 **유지보수의 향상**을 위해 컴포넌트 단위로 코드를 작성 합니다. useState, useEffect, useRef 같은 기본적인 hook 사용에 능숙합니다. ",
+      "Virtual DOM의 장단점을 알고 **컴포넌트의 재사용**과 **유지 보수의 향상**을 위해 컴포넌트 단위로 코드를 작성합니다. useState, useEffect, useRef 같은 기본적인 hook 사용에 능숙합니다. ",
   },
   {
     id: 2,
     logoImg: recoilLogo,
     name: "Recoil",
-    content: "recoil을 사용하여 간단하게 **전역 상태를 관리** 할 수 있습니다.",
+    content: "recoil을 사용하여 간단하게 **전역 상태를 관리**할 수 있습니다.",
   },
   {
     id: 3,
