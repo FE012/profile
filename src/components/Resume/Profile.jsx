@@ -10,11 +10,10 @@ const ProfileBox = styled.article`
   }
 `;
 
-const Photo = styled.div`
+const Photo = styled.img`
   width: 250px;
   height: 250px;
-  background-image: url(${profileImg});
-  background-size: cover;
+  border-radius: 50%;
   margin-right: 50px;
   @media screen and (max-width: 800px) {
     width: 200px;
@@ -50,7 +49,7 @@ const Info = styled.div`
 function Profile() {
   return (
     <ProfileBox>
-      <Photo />
+      <Photo src={profileImg} alt="프로필이미지" />
       <InfoBox>
         <Name> 🙌 프론트엔드 개발자 김예본입니다.</Name>
         <Info>
