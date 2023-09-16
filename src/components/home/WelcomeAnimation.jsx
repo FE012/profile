@@ -22,7 +22,7 @@ const NameBox = styled.div`
   text-align: center;
   font-weight: var(--medeum-weight);
   font-size: var(--big-font);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   @media screen and (max-width: 800px) {
     font-size: var(--subtitle-font);
   }
@@ -33,13 +33,15 @@ const TypewriterWithCustomStyle = styled(Typewriter)`
 `;
 
 const LinkBox = styled.div`
-  font-size: var(--main-font);
+  font-size: var(--subtitle-font);
   font-weight: var(--medeum-weight);
   :hover {
     color: var(--point-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
   }
   @media screen and (max-width: 800px) {
-    font-size: var(--small-font);
+    font-size: var(--main-font);
   }
 `;
 
@@ -66,10 +68,10 @@ function WelcomeAnimation() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        transition={{ delay: 2 }}
       >
         <LinkBox>
-          <Link to="/resume">Resume</Link>
+          <Link to="/resume">Click!</Link>
         </LinkBox>
       </motion.div>
     </Section>
