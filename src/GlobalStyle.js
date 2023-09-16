@@ -7,9 +7,9 @@ const GlobalStyle = createGlobalStyle`
     --point-color: #0171E2;
     --dark-color: #181617;
     /* FontSize */
-    --main-font : 1.1rem;
+    --main-font: 1rem;
     --title-font : 1.8rem;
-    --subtitle-font: 1.4rem;
+    --subtitle-font: 1.3rem;
     --big-font: 3.5rem;
     /* FontWeight*/
     --regular-weight: 400;
