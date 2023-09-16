@@ -96,7 +96,6 @@ const Planning = styled.ul`
     list-style-type: disc;
     margin-left: 15px;
     margin-top: 10px;
-    font-size: var(--main-font);
   }
 `;
 
@@ -104,7 +103,7 @@ const Skills = styled.h5`
   color: var(--point-color);
   padding-bottom: 5px;
   border-bottom: 1px solid var(--main-color);
-  font-size: var(--main-font);
+  font-size: 1.1rem;
 `;
 
 const Realization = styled.ul`
