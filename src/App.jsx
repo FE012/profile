@@ -48,7 +48,7 @@ function App() {
   const toggleDark = () => setDarkMode((prev) => !prev);
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <GlobalStyle />
         <Header />
