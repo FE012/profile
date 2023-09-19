@@ -142,18 +142,18 @@ function Project() {
                   <FontAwesomeIcon icon={faGithub} size="xl" />
                 </button>
               </a>
-              <a href={project.vlog} target="_blank" rel="noopener noreferrer">
-                {project.id === 0 ? <button>노션</button> : ""}
-              </a>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button>📎 배포</button>
-              </a>
               <a
                 href={project.pageView}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {project.id === 0 ? <button>구현한 페이지 보기</button> : ""}
+              </a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <button>📎 배포</button>
+              </a>
+              <a href={project.vlog} target="_blank" rel="noopener noreferrer">
+                {project.id === 0 ? <button>노션</button> : ""}
               </a>
             </div>
             <Name>{project.name}</Name>
