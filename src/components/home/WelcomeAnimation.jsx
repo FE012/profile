@@ -55,7 +55,7 @@ function WelcomeAnimation() {
           transition={{ duration: 2.0 }}
           style={{ color: "var(--point-color)" }}
         >
-          <p>웹을 통해 아이디어를 현실로 만드는</p>
+          <p>배움과 성장을 추구하는</p>
           <TypewriterWithCustomStyle
             words={["", "프론트엔드 개발자 김예본입니다."]}
             cursor
