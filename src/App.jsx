@@ -3,8 +3,7 @@ import Header from "./components/Header";
 import GlobalStyle from "./GlobalStyle";
 import { darkTheme, lightTheme } from "./theme";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { isDarkAtom } from "./Recoil/atoms";
-import { useEffect } from "react";
+import { darkModeAtom } from "./Recoil/atoms";
 import Router from "../src/components/Router";
 import { BrowserRouter } from "react-router-dom";
 import { BsFillSunFill } from "react-icons/bs";
@@ -28,22 +27,22 @@ const Button = styled.button`
 `;
 
 function App() {
-  const darkMode = useRecoilValue(isDarkAtom);
-  const setDarkMode = useSetRecoilState(isDarkAtom);
+  const darkMode = useRecoilValue(darkModeAtom);
+  const setDarkMode = useSetRecoilState(darkModeAtom);
 
   // 로컬 스토리지에서 설정을 불러오기
-  useEffect(() => {
-    const savedDarkMode = localStorage.getItem("darkMode");
-    if (savedDarkMode !== null) {
-      // 로컬 스토리지에 값이 저장되어 있다면 해당 값으로 Recoil 상태를 초기화
-      setDarkMode(JSON.parse(savedDarkMode));
-    }
-  }, [setDarkMode]);
+  // useEffect(() => {
+  //   const savedDarkMode = localStorage.getItem("darkMode");
+  //   if (savedDarkMode !== null) {
+  //     // 로컬 스토리지에 값이 저장되어 있다면 해당 값으로 Recoil 상태를 초기화
+  //     setDarkMode(JSON.parse(savedDarkMode));
+  //   }
+  // }, [setDarkMode]);
 
   // 설정이 변경될 때 로컬 스토리지에 저장
-  useEffect(() => {
-    localStorage.setItem("darkMode", darkMode.toString());
-  }, [darkMode]);
+  // useEffect(() => {
+  //   localStorage.setItem("darkMode", darkMode.toString());
+  // }, [darkMode]);
 
   const toggleDark = () => setDarkMode((prev) => !prev);
 
