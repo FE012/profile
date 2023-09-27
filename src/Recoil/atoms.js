@@ -3,8 +3,8 @@ import { recoilPersist } from "recoil-persist";
 
 const { persistAtom } = recoilPersist();
 
-export const isDarkAtom = atom({
-  key: "isDark",
+export const darkModeAtom = atom({
+  key: "darkMode",
   default: false,
   effects_UNSTABLE: [persistAtom],
 });
