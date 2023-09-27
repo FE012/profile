@@ -18,6 +18,6 @@ export const DefinedData = [
     title: "공부한 내용을 정리하여 기록합니다.",
     content1:
       "블로그를 운영하는 주된 이유는 공부하느라 투자한 시간과 노력이 헛되지 않게 하기 위해서입니다. 정리되지 않은 학습 내용은 금방 사라지기 때문에 기록으로 남기려고 노력합니다.",
-    content2: "https://velog.io/@developer09/series",
+    content2: "https://velog.io/@developer09",
   },
 ];
