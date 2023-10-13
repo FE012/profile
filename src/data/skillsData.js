@@ -38,7 +38,7 @@ export const skillsData = [
     logoImg: styledComponentsLogo,
     name: "Styled-components",
     content:
-      "props를 사용해 **조건부 렌더링**을 할 수 있는 장점을 적극적으로 활용하며, ThemeProvider로 공통 스타일 속성 관리를 할 수 있습니다.",
+      "**상태 변수**를 공유해 **조건부 렌더링**을 할 수 있는 장점을 적극적으로 활용하며, ThemeProvider로 공통 스타일 속성 관리를 할 수 있습니다.",
   },
   {
     id: 5,
