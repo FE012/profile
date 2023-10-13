@@ -38,7 +38,7 @@ function Skills() {
               <LogoImg src={skill.logoImg} />
               <div>
                 <h3>{skill.name}</h3>
-                {/* 특정 글씨 진하게 처리하는 함수 컴포넌트 */}
+                {/* 특정 글씨 진하게 처리하는 함수 */}
                 <MakeTextBold>{skill.content}</MakeTextBold>
               </div>
             </li>
