@@ -9,6 +9,7 @@ const ProjectBox = styled.article`
   display: flex;
   border-bottom: 1px solid var(--main-color);
   margin-bottom: 40px;
+  padding-bottom: 40px;
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
@@ -19,21 +20,12 @@ const ProjectBox = styled.article`
     height: 40px;
     font-weight: var(--bold-weight);
     margin-right: 0.5rem;
+    border-radius: 10px;
   }
   a:first-child button {
     border-radius: 100%;
     width: 40px;
     height: 40px;
-  }
-  a:nth-child(2) button {
-    border-radius: 15%;
-    height: 40px;
-  }
-  a:nth-child(3) button {
-    border-radius: 15%;
-  }
-  a:nth-child(4) button {
-    border-radius: 15%;
   }
   button:hover {
     background-color: var(--dark-color);
@@ -113,6 +105,7 @@ const Realization = styled.ul`
     list-style-type: disc;
     margin-left: 15px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -125,11 +118,7 @@ function Project() {
       {projectData.map((project, id) => (
         <ProjectBox key={id}>
           <LeftSection>
-            {project.id === 1 ? (
-              <ProjectImg src={project.img} />
-            ) : (
-              <ProjectImg src={project.img} />
-            )}
+            <ProjectImg src={project.img} />
           </LeftSection>
           <RightSection>
             <div>
@@ -186,6 +175,28 @@ function Project() {
                       <MakeTextBold>{realization}</MakeTextBold>
                     </li>
                   ))}
+                  {project.id === 1 ? (
+                    <a
+                      href={project.troubleShooting}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      📎 recoil persist 블로깅
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {project.id === 2 ? (
+                    <a
+                      href={project.troubleShooting}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      📎 문제 해결 블로깅
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </Realization>
               ) : (
                 ""
