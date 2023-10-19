@@ -23,4 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 # 추가: 특정 폴더 무시
-/src/assets/image/
