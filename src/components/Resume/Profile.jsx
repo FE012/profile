@@ -51,7 +51,7 @@ function Profile() {
     <ProfileBox>
       <Photo src={profileImg} alt="프로필이미지" />
       <InfoBox>
-        <Name> 🙌 프론트엔드 개발자 김예본입니다.</Name>
+        <Name> 배움과 성장을 추구하는 프론트엔드 개발자 김예본입니다.</Name>
         <Info>
           <a href="mailto:twte96@gmail.com">📧 twte96@gmail.com</a>
           <a
