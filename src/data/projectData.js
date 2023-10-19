@@ -2,6 +2,7 @@ import projectImg from "../assets/image/projectImg.png";
 import coinImg from "../assets/image/coinImg.png";
 import toDoImg from "../assets/image/toDoImg.png";
 import NomflixImg from "../assets/image/nomflixImg.png";
+import profileProject from "../assets/image/profileProject.png";
 
 export const projectData = [
   {
@@ -24,37 +25,62 @@ export const projectData = [
     ],
     realization: [
       "**유저 마이페이지, 프로필 수정 페이지, 유저 신고 페이지 담당 개발**",
-      "수정 상태에 따라 버튼의 활성화 여부를 바꾸는 것이 적합하다 생각해서 input을 제어 컴포넌트로 구현했습니다.",
-      "프로필 이미지 업로드 및 미리 보기 기능을 구현했습니다.",
-      "React-query를 이용해 서버 상태를 관리했습니다.",
-      "React-query로 로딩 상태에 따른 처리를 하여 사용자에게 빈 화면을 보여주지 않고, 로딩 컴포넌트를 보여줌으로써 UX를 향상시켰습니다.",
-      "팀원들과 같이 사용할 수 있도록 공통 컴포넌트를 제작했습니다.",
-      "버튼 컴포넌트를 제작해서 프로젝트의 기본적인 UI를 통일하기 쉽도록 구현했습니다.",
+      "수정 상태에 따라 버튼의 활성화 여부를 바꾸는 것이 적합하다 생각해서 input을 제어 컴포넌트로 구현",
+      "프로필 이미지 업로드 및 미리 보기 기능 구현",
+      "React-query를 이용해 서버 상태 관리",
+      "React-query로 로딩 상태에 따른 처리를 하여 사용자에게 빈 화면을 보여주지 않고, 로딩 컴포넌트를 보여줌으로써 UX를 향상시킴",
+      "팀원들과 같이 사용할 수 있도록 공통 컴포넌트를 제작",
+      "버튼 컴포넌트를 제작해서 프로젝트의 기본적인 UI를 통일하기 쉽도록 구현",
     ],
   },
   {
     id: 1,
+    github: "https://github.com/FE012/profile",
+    vlog: "",
+    link: "https://profile-fe012.vercel.app",
+    pageView: "",
+    img: profileProject,
+    name: "profile",
+    summary: "개발자로서 본인을 어필하기 위해 이력서 사이트를 만들었습니다.",
+    period: "2023. 08 ~ ing",
+    position: "",
+    skills:
+      "#React, #React-router-dom, #Recoil,#Styled-components,#Framer Motion ",
+    planning: [],
+    realization: [
+      "모바일을 고려하여 반응형 디자인을 구현",
+      "라이트/다크 모드 구현",
+      "홈페이지의 애니메이션 구현",
+      "vercel을 이용해 배포",
+      "새로고침시 recoil의 전역상태가 초기화 되는 문제를 recoil persist 라이브러리로 해결",
+    ],
+    troubleShooting: "https://velog.io/@developer09/1",
+  },
+  {
+    id: 2,
     github: "https://github.com/FE012/react_nomflix",
     vlog: "",
     link: "https://fe012.github.io/react_nomflix/",
     pageView: "",
     img: NomflixImg,
     name: "Nomflix [개인]",
-    summary: "실제 넷플릭스 사이트를 클론 코딩 했습니다.",
+    summary: "실제 넷플릭스 사이트를 클론 코딩했습니다.",
     period: "2023.5 (2주)",
     skills:
       "#React, #TypeScript, #React-query, #React-hook-form, #Styled-components, #Framer Motion",
     planning: [],
     realization: [
-      "React-query를 사용해 영화정보 API 불러오기 구현",
-      "TypeScript 적용",
+      "React-query를 사용해 영화정보 API 불러오기를 구현",
+      "TypeScrip 적용",
       "영화 검색 기능 구현",
-      "Framer Motion 을 사용한 로고, 검색 영역 등 애니메이션 구현",
-      "영화 슬라이드 및 모달창 애니메이션 구현",
+      "Framer Motion 을 사용한 로고, 검색 영역 등 애니메이션을 구현",
+      "영화 슬라이더 및 모달창 애니메이션을 구현",
+      "문제 해결 과정을 블로그에 기록",
     ],
+    troubleShooting: "https://velog.io/@developer09/2",
   },
   {
-    id: 2,
+    id: 3,
     github: "https://github.com/FE012/react_crypto-tracker",
     vlog: "",
     link: "https://fe012.github.io/react_crypto-tracker/",
@@ -72,7 +98,7 @@ export const projectData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     github: "https://github.com/FE012/recoil-to-do",
     vlog: "",
     link: "https://fe012.github.io/recoil-to-do/",
