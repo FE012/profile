@@ -22,6 +22,9 @@ const SkillsBox = styled.article`
       font-weight: var(--bold-weight);
       color: var(--point-color);
     }
+    p {
+      line-height: 1.5;
+    }
   }
 `;
 
@@ -39,7 +42,9 @@ function Skills() {
               <div>
                 <h3>{skill.name}</h3>
                 {/* 특정 글씨 진하게 처리하는 함수 */}
-                <MakeTextBold>{skill.content}</MakeTextBold>
+                <p>
+                  <MakeTextBold>{skill.content}</MakeTextBold>
+                </p>
               </div>
             </li>
           </ul>
