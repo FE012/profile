@@ -12,14 +12,14 @@ export const skillsData = [
     logoImg: jsLogo,
     name: "JavaScript",
     content:
-      "구조 분해 할당, spread 구문 등 **ES6 문법 사용**과 주요 Array 내장 메서드에 사용에 익숙합니다.",
+      "구조 분해 할당, spread 구문 등 **ES6 문법** 사용에 익숙하고, 주요 **내장 메서드**와 **모듈**에 대한 개념 및 JS의 특징을 이해하고 있습니다.",
   },
   {
     id: 1,
     logoImg: reactLogo,
     name: "React",
     content:
-      "Virtual DOM을 이해하고 있으며 **컴포넌트의 재사용**과 **유지 보수의 향상**을 위해 컴포넌트 단위로 코드를 작성합니다. useState, useEffect, useRef 같은 기본적인 hook 사용에 능숙합니다. ",
+      "Virtual DOM을 이해하고 있고 **컴포넌트의 재사용**과 **유지 보수의 향상**을 위해 컴포넌트 단위로 코드를 작성하며, 기본적인 hook 사용에 능숙합니다. **Context API**로 전역 상태를 관리하는 SPA를 제작할 수 있습니다.",
   },
   {
     id: 2,
